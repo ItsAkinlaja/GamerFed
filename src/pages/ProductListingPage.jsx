@@ -2,13 +2,26 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ProductCard from '../components/ProductCard';
 import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const ProductListingPage = ({ title, description, items, gradientFrom, gradientTo }) => {
-  // Scroll to top when the component mounts
+  const location = useLocation();
+
+  // Handle scroll behavior
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          // Optional: Add a highlight effect or similar here if desired
+        }
+      }, 100); // Small delay to ensure rendering
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
 
   return (
     <div className="min-h-screen pt-20 pb-12 relative overflow-hidden">
@@ -51,6 +64,7 @@ const ProductListingPage = ({ title, description, items, gradientFrom, gradientT
           {items.map((product, index) => (
             <motion.div
               key={product.id}
+              id={`product-${product.id}`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
