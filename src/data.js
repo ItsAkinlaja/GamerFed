@@ -142,7 +142,7 @@ export const products = {
       id: 101,
       name: "PlayStation 5 Standard Edition",
       price: 650000,
-      image: "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$",
+      image: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=1000&auto=format&fit=crop",
       category: "Console",
       description: "Experience lightning-fast loading with an ultra-high-speed SSD."
     },
@@ -166,7 +166,7 @@ export const products = {
       id: 104,
       name: "Xbox Series S",
       price: 350000,
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Xbox_Series_S_and_controller.png/800px-Xbox_Series_S_and_controller.png",
+      image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?q=80&w=1000&auto=format&fit=crop",
       category: "Console",
       description: "Next-gen performance in the smallest Xbox ever."
     },
@@ -182,7 +182,7 @@ export const products = {
       id: 107,
       name: "PlayStation VR2",
       price: 550000,
-      image: "https://gmedia.playstation.com/is/image/SIEPDC/psvr2-product-thumbnail-01-en-24feb22?$facebook$",
+      image: "https://images.unsplash.com/photo-1626379953822-baec19c3accd?q=80&w=1000&auto=format&fit=crop",
       category: "VR",
       description: "Escape into worlds that feel, look and sound truly real."
     },
@@ -190,7 +190,7 @@ export const products = {
       id: 108,
       name: "Meta Quest 3",
       price: 450000,
-      image: "https://scontent.flos1-2.fna.fbcdn.net/v/t39.8562-6/355152636_609733471310692_8003442318728287864_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=f537c7&_nc_ohc=Wk2b0c4Qz64Q7kNvgHi1_hQ&_nc_zm=1&_nc_ht=scontent.flos1-2.fna&_nc_gid=AlFk9y2LzG0G0HqK-j4yQ0_&oh=00_AYBq2e9fQ6Q4i6z4Q8z4Q8z4Q8z4Q8z4Q8z4Q8z4Q8z4Q&oe=66E1F2B4",
+      image: "https://images.unsplash.com/photo-1622979135225-d2ba269fb1bd?q=80&w=1000&auto=format&fit=crop",
       category: "VR",
       description: "The most powerful Meta Quest yet."
     },
@@ -198,7 +198,7 @@ export const products = {
       id: 109,
       name: "ASUS ROG Ally",
       price: 600000,
-      image: "https://dlcdnwebimgs.asus.com/gain/3b9b9b9b-9b9b-9b9b-9b9b-9b9b9b9b9b9b/w800",
+      image: "https://images.unsplash.com/photo-1593118247619-e2d6f056869e?q=80&w=1000&auto=format&fit=crop",
       category: "Handheld",
       description: "#playALLYourgames on the ROG Ally."
     },
@@ -206,7 +206,7 @@ export const products = {
       id: 110,
       name: "Nintendo Switch Lite",
       price: 200000,
-      image: "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/en_US/switch/lite/colors/switch-lite-blue",
+      image: "https://images.unsplash.com/photo-1618519764620-7403abdbdfe9?q=80&w=1000&auto=format&fit=crop",
       category: "Handheld",
       description: "Dedicated to handheld play."
     }
