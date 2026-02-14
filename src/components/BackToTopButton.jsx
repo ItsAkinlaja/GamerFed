@@ -35,7 +35,7 @@ const BackToTopButton = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 p-3.5 rounded-xl bg-gradient-to-br from-purple-600 to-blue-600 text-white shadow-[0_0_20px_rgba(124,58,237,0.5)] border border-white/20 hover:shadow-[0_0_30px_rgba(124,58,237,0.8)] transition-all group overflow-hidden"
+          className="fixed bottom-32 right-6 z-40 p-3.5 rounded-xl bg-gradient-to-br from-purple-600 to-blue-600 text-white shadow-[0_0_20px_rgba(124,58,237,0.5)] border border-white/20 hover:shadow-[0_0_30px_rgba(124,58,237,0.8)] transition-all group overflow-hidden"
         >
           {/* Shine effect */}
           <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
