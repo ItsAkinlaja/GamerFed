@@ -30,6 +30,7 @@ const Navbar = () => {
     { name: 'Games', href: '/games' },
     { name: 'Consoles', href: '/consoles' },
     { name: 'Laptops', href: '/laptops' },
+    { name: 'Accessories', href: '/accessories' },
     { name: 'Services', href: '/services' },
   ];
 

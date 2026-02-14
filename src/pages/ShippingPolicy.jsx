@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { Truck, Clock, MapPin, Globe } from 'lucide-react';
+import { Truck, Clock, MapPin, Globe, AlertCircle } from 'lucide-react';
 
 const ShippingPolicy = () => {
   return (

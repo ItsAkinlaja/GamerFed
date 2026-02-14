@@ -8,6 +8,7 @@ import FAQs from './pages/FAQs';
 import ShippingPolicy from './pages/ShippingPolicy';
 import Returns from './pages/Returns';
 import Services from './pages/Services';
+import Accessories from './pages/Accessories';
 import ProductListingPage from './pages/ProductListingPage';
 import { products } from './data';
 import ScrollToTop from './components/ScrollToTop';
@@ -34,6 +35,7 @@ function App() {
             <Route path="/shipping-policy" element={<ShippingPolicy />} />
             <Route path="/returns" element={<Returns />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/accessories" element={<Accessories />} />
             
             {/* Product Listing Pages */}
             <Route 
