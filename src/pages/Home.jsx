@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import ProductCard from '../components/ProductCard';
 import Reviews from '../components/Reviews';
+import ServicesPreview from '../components/ServicesPreview';
 import { products } from '../data';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
@@ -83,6 +84,8 @@ const Home = () => {
           viewMoreLink="/laptops"
         />
         
+        <ServicesPreview />
+
         <Reviews />
       </main>
     </>
