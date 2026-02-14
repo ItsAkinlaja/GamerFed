@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import ProductCard from '../components/ProductCard';
 import { ArrowLeft } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const ProductListingPage = ({ title, description, items, gradientFrom, gradientTo, enableCategorization = false }) => {
   const location = useLocation();
