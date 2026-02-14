@@ -3,42 +3,45 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Wrench, Download, Cpu, ArrowRight, Sparkles } from 'lucide-react';
 
-const ServiceCard = ({ icon: Icon, title, description, delay }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.6, delay: delay }}
-    className="relative group h-full"
-  >
-    <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-    <div className="relative h-full bg-[#0a0a0a] border border-white/10 p-8 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-colors duration-500">
-      
-      {/* Abstract Background Shapes */}
-      <div className="absolute -top-10 -right-10 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-colors duration-500" />
-      <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-colors duration-500" />
-      
-      <div className="relative z-10 flex flex-col h-full">
-        <div className="w-14 h-14 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 border border-white/5 group-hover:border-purple-500/30">
-          <Icon className="w-7 h-7 text-purple-400 group-hover:text-white transition-colors duration-300" />
-        </div>
+const ServiceCard = ({ icon, title, description, delay }) => {
+  const Icon = icon;
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: delay }}
+      className="relative group h-full"
+    >
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="relative h-full bg-[#0a0a0a] border border-white/10 p-8 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-colors duration-500">
         
-        <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 transition-all duration-300">
-          {title}
-        </h3>
+        {/* Abstract Background Shapes */}
+        <div className="absolute -top-10 -right-10 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-colors duration-500" />
+        <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-colors duration-500" />
         
-        <p className="text-gray-400 text-base leading-relaxed mb-6 flex-grow group-hover:text-gray-300 transition-colors duration-300">
-          {description}
-        </p>
+        <div className="relative z-10 flex flex-col h-full">
+          <div className="w-14 h-14 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 border border-white/5 group-hover:border-purple-500/30">
+            <Icon className="w-7 h-7 text-purple-400 group-hover:text-white transition-colors duration-300" />
+          </div>
+          
+          <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 transition-all duration-300">
+            {title}
+          </h3>
+          
+          <p className="text-gray-400 text-base leading-relaxed mb-6 flex-grow group-hover:text-gray-300 transition-colors duration-300">
+            {description}
+          </p>
 
-        <div className="flex items-center text-sm font-medium text-purple-400 group-hover:text-purple-300 transition-colors">
-          <span className="mr-2">Learn more</span>
-          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          <div className="flex items-center text-sm font-medium text-purple-400 group-hover:text-purple-300 transition-colors">
+            <span className="mr-2">Learn more</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </div>
         </div>
       </div>
-    </div>
-  </motion.div>
-);
+    </motion.div>
+  );
+};
 
 const ServicesPreview = () => {
   const services = [

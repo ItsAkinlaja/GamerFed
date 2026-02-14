@@ -2,8 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MessageCircle, ShoppingBag, Star } from 'lucide-react';
 import { contactInfo } from '../data';
+import { useCart } from '../context/CartContext';
 
 const ProductCard = ({ product }) => {
+  const { addToCart } = useCart();
+
   const handleBuyNow = () => {
     const message = `Hello Gamers Federation, I am interested in buying *${product.name}* for ₦${product.price.toLocaleString()}. Is it available?`;
     const url = `https://wa.me/${contactInfo.whatsappNumber}?text=${encodeURIComponent(message)}`;

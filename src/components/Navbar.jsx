@@ -10,10 +10,20 @@ import CartDrawer from './CartDrawer';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const { getCartCount, setIsCartOpen } = useCart();
   const location = useLocation();
 
   const isHome = location.pathname === '/';
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -34,7 +44,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full z-50 bg-[#050505]/90 backdrop-blur-md border-b border-white/5">
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${
+      isScrolled 
+        ? 'bg-[#050505]/80 backdrop-blur-md border-b border-white/5 shadow-lg' 
+        : 'bg-transparent border-b border-transparent'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
