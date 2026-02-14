@@ -4,8 +4,21 @@ import ProductCard from '../components/ProductCard';
 import { ArrowLeft } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
-const ProductListingPage = ({ title, description, items, gradientFrom, gradientTo }) => {
+const ProductListingPage = ({ title, description, items, gradientFrom, gradientTo, enableCategorization = false }) => {
   const location = useLocation();
+
+  // Group items by category if enabled
+  const groupedItems = React.useMemo(() => {
+    if (!enableCategorization) return null;
+    return items.reduce((acc, item) => {
+      const category = item.category || 'Others';
+      if (!acc[category]) {
+        acc[category] = [];
+      }
+      acc[category].push(item);
+      return acc;
+    }, {});
+  }, [items, enableCategorization]);
 
   // Handle scroll behavior
   useEffect(() => {
@@ -60,19 +73,57 @@ const ProductListingPage = ({ title, description, items, gradientFrom, gradientT
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-          {items.map((product, index) => (
-            <motion.div
-              key={product.id}
-              id={`product-${product.id}`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <ProductCard product={product} />
-            </motion.div>
-          ))}
-        </div>
+        {enableCategorization && groupedItems ? (
+          Object.entries(groupedItems).map(([category, categoryItems], catIndex) => (
+            <div key={category} className="mb-20 relative">
+               <div className="absolute -left-4 -top-8 w-24 h-24 bg-gradient-to-br from-white/5 to-white/0 rounded-full blur-2xl -z-10" />
+              
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="flex items-end gap-4 mb-8 border-b border-white/10 pb-4"
+              >
+                <h2 className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 uppercase tracking-tighter">
+                  {category}
+                </h2>
+                <span className="text-sm font-medium text-gray-500 mb-2 px-3 py-1 bg-white/5 rounded-full border border-white/5">
+                  {categoryItems.length} Games
+                </span>
+              </motion.div>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+                {categoryItems.map((product, index) => (
+                  <motion.div
+                    key={product.id}
+                    id={`product-${product.id}`}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: Math.min(index * 0.05, 0.5) }}
+                  >
+                    <ProductCard product={product} />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          ))
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+            {items.map((product, index) => (
+              <motion.div
+                key={product.id}
+                id={`product-${product.id}`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <ProductCard product={product} />
+              </motion.div>
+            ))}
+          </div>
+        )}
 
         {items.length === 0 && (
           <div className="text-center py-20">

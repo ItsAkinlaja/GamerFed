@@ -45,6 +45,7 @@ function App() {
                   items={products.games}
                   gradientFrom="from-purple-500"
                   gradientTo="to-blue-500"
+                  enableCategorization={true}
                 />
               } 
             />
