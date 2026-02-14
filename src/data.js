@@ -135,6 +135,590 @@ export const products = {
       image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2420110/header.jpg",
       category: "PS5/PC",
       description: "Join Aloy as she braves the Forbidden West – a majestic but dangerous frontier that conceals mysterious new threats."
+    },
+      {
+      id: 19,
+      name: "Uncharted: Legacy of Thieves Collection",
+      price: 16000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1659420/capsule_231x87.jpg?t=1751913411",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 20,
+      name: "Red Dead Redemption 2",
+      price: 60000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_231x87.jpg?t=1759502961",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 21,
+      name: "Days Gone",
+      price: 16000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1259420/capsule_231x87.jpg?t=1750947718",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 22,
+      name: "Mafia: Definitive Edition",
+      price: 6000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030840/capsule_231x87.jpg?t=1759852929",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 23,
+      name: "Black Myth: Wukong",
+      price: 45000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/b7f722ddd5e23503f598586aa3700dd4d827bb2d/capsule_231x87.jpg?t=1760601605",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 24,
+      name: "Mafia II: Definitive Edition",
+      price: 6000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030830/capsule_231x87.jpg?t=1759852951",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 25,
+      name: "Watch_Dogs 2",
+      price: 50000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/capsule_231x87.jpg?t=1751986887",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 26,
+      name: "Mafia III: Definitive Edition",
+      price: 6000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/360430/capsule_231x87.jpg?t=1756420682",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 27,
+      name: "Watch_Dogs",
+      price: 50000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/capsule_231x87.jpg?t=1751986887",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 28,
+      name: "Grand Theft Auto V",
+      price: 30000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/a318bd9affe8eee32984b18794b273c256e9b2d6/capsule_231x87.jpg?t=1765479644",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 29,
+      name: "Ryse: Son of Rome",
+      price: 3000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/302510/capsule_231x87.jpg?t=1588670554",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 30,
+      name: "Grand Theft Auto IV: The Complete Edition",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12210/capsule_231x87.jpg?t=1721061564",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 31,
+      name: "God of War Ragnarök",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/capsule_231x87.jpg?t=1763059412",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 32,
+      name: "Horizon Forbidden West Complete Edition",
+      price: 36000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2420110/capsule_231x87.jpg?t=1763576690",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 33,
+      name: "The Last of Us Part I",
+      price: 30000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888930/capsule_231x87.jpg?t=1750959031",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 34,
+      name: "Marvel's Spider-Man Remastered",
+      price: 24000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/capsule_231x87.jpg?t=1763569047",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 35,
+      name: "Ghost of Tsushima DIRECTOR'S CUT",
+      price: 36000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/capsule_231x87.jpg?t=1763409398",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 36,
+      name: "Assassin's Creed Mirage",
+      price: 50000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3035570/02aa5646231e38bfbd1d83964063a2d0521979b8/capsule_231x87.jpg?t=1766087993",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 37,
+      name: "Sleeping Dogs: Definitive Edition",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/307690/capsule_231x87.jpg?t=1766070052",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 38,
+      name: "Control Ultimate Edition",
+      price: 40000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/870780/40054b94c2e8734ad9e76787534af5ba1b034a53/capsule_231x87.jpg?t=1769413914",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 39,
+      name: "A Plague Tale: Requiem",
+      price: 50000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182900/capsule_231x87.jpg?t=1761846087",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 40,
+      name: "Mad Max",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/234140/capsule_231x87.jpg?t=1763747885",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 41,
+      name: "Gotham Knights",
+      price: 60000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1496790/capsule_231x87.jpg?t=1747345787",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 42,
+      name: "Saints Row",
+      price: 30000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/742420/capsule_231x87.jpg?t=1764670956",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 43,
+      name: "Star Wars Jedi: Survivor",
+      price: 70000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1774580/capsule_231x87.jpg?t=1748945254",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 44,
+      name: "Max Payne 3",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/204100/capsule_231x87.jpg?t=1718391374",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 45,
+      name: "Warhammer 40,000: Space Marine 2",
+      price: 60000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2183900/capsule_231x87.jpg?t=1768485182",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 46,
+      name: "High On Life",
+      price: 60000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2069250/fcc9b0ffa146fef489268d9178fb5249d4fe0a4f/capsule_231x87.jpg?t=1770994803",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 47,
+      name: "Tom Clancy's Splinter Cell Blacklist",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/235600/capsule_231x87.jpg?t=1764775433",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 48,
+      name: "Tom Clancy's Rainbow Six Siege",
+      price: 45000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/429275e1f06a9697892acdc57ae0a9d06bafe9f1/capsule_231x87.jpg?t=1770141487",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 49,
+      name: "Call of Duty: Modern Warfare",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2000950/capsule_231x87.jpg?t=1678294805",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 50,
+      name: "Call of Duty: Black Ops III",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311210/capsule_231x87.jpg?t=1748022663",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 51,
+      name: "Call of Duty: Modern Warfare II",
+      price: 15000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10180/capsule_231x87.jpg?t=1748044299",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 52,
+      name: "Call of Duty: Black Ops 6",
+      price: 28000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2933620/capsule_231x87.jpg?t=1765489042",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 53,
+      name: "Call of Duty: Modern Warfare III",
+      price: 28000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/05b8f73493348dfa9b6662dc13a6740929ea195b/capsule_231x87.jpg?t=1764711750",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 54,
+      name: "Call of Duty: WWII",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/476600/capsule_231x87.jpg?t=1751302904",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 55,
+      name: "Call of Duty: Black Ops Cold War",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1985810/capsule_231x87.jpg?t=1731607699",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 56,
+      name: "Call of Duty: Advanced Warfare",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/209650/capsule_231x87.jpg?t=1646762527",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 57,
+      name: "Call of Duty: Ghosts",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/209160/capsule_231x87.jpg?t=1748043672",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 58,
+      name: "Call of Duty: Infinite Warfare",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292730/capsule_231x87.jpg?t=1755558170",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 59,
+      name: "Call of Duty: Black Ops",
+      price: 45000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3606480/e265efebec95c52bb0c662532a51b6bdf45ccd37/capsule_231x87.jpg?t=1770660428",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 60,
+      name: "Call of Duty: Black Ops II",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/202970/capsule_231x87.jpg?t=1748037715",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 61,
+      name: "Gears 5",
+      price: 30000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1097840/capsule_231x87.jpg?t=1684425784",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 62,
+      name: "Deathloop",
+      price: 12000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1252330/capsule_231x87.jpg?t=1750785409",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 63,
+      name: "DOOM Eternal",
+      price: 8000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/782330/capsule_231x87.jpg?t=1755109910",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 64,
+      name: "RoboCop: Rogue City",
+      price: 4000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3743240/b0fa4bc068cfcd84dd73dcb97efa8dbb63fa06bc/capsule_231x87.jpg?t=1752768037",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 65,
+      name: "Homefront: The Revolution",
+      price: 20000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223100/capsule_231x87.jpg?t=1614763860",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 66,
+      name: "Wolfenstein II: The New Colossus",
+      price: 6000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/612880/capsule_231x87.jpg?t=1750784115",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 67,
+      name: "Sniper Elite 5",
+      price: 50000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1029690/capsule_231x87.jpg?t=1770633150",
+      category: "Shooting",
+      description: "Experience one of the best games in the Shooting genre."
+    },
+    {
+      id: 68,
+      name: "EA SPORTS FC 25",
+      price: 70000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669320/59500266e56f82c44a42f75519013aac085b05fc/capsule_231x87.jpg?t=1769021004",
+      category: "Sports",
+      description: "Experience one of the best games in the Sports genre."
+    },
+    {
+      id: 69,
+      name: "FIFA 23",
+      price: 45000,
+      image: "https://via.placeholder.com/300x450?text=FIFA%2023",
+      category: "Sports",
+      description: "Popular Sports title available now."
+    },
+    {
+      id: 70,
+      name: "NBA 2K24",
+      price: 45000,
+      image: "https://via.placeholder.com/300x450?text=NBA%202K24",
+      category: "Sports",
+      description: "Popular Sports title available now."
+    },
+    {
+      id: 71,
+      name: "F1 24",
+      price: 70000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2488620/capsule_231x87.jpg?t=1748912330",
+      category: "Sports",
+      description: "Experience one of the best games in the Sports genre."
+    },
+    {
+      id: 72,
+      name: "Ride 5",
+      price: 50000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1650010/capsule_231x87.jpg?t=1763029608",
+      category: "Sports",
+      description: "Experience one of the best games in the Sports genre."
+    },
+    {
+      id: 73,
+      name: "eFootball 2024",
+      price: 45000,
+      image: "https://via.placeholder.com/300x450?text=eFootball%202024",
+      category: "Sports",
+      description: "Popular Sports title available now."
+    },
+    {
+      id: 74,
+      name: "Football Manager 2024",
+      price: 9000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2473420/capsule_231x87.jpg?t=1764168295",
+      category: "Sports",
+      description: "Experience one of the best games in the Sports genre."
+    },
+    {
+      id: 75,
+      name: "Riders Republic",
+      price: 40000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2290180/7b5617323b621f1c78f9296eea721b3c98c401a1/capsule_231x87.jpg?t=1770314567",
+      category: "Sports",
+      description: "Experience one of the best games in the Sports genre."
+    },
+    {
+      id: 76,
+      name: "Dragon Age: The Veilguard",
+      price: 60000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1845910/9ffc80bed9c5290f264b072e7341890d9e12d779/capsule_231x87.jpg?t=1748968382",
+      category: "RPG",
+      description: "Experience one of the best games in the RPG genre."
+    },
+    {
+      id: 77,
+      name: "Evil West",
+      price: 50000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1065310/capsule_231x87.jpg?t=1761845937",
+      category: "RPG",
+      description: "Experience one of the best games in the RPG genre."
+    },
+    {
+      id: 78,
+      name: "Tekken 8",
+      price: 24000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1778820/capsule_231x87.jpg?t=1770678135",
+      category: "Fighting",
+      description: "Experience one of the best games in the Fighting genre."
+    },
+    {
+      id: 79,
+      name: "Injustice 2",
+      price: 50000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/627270/capsule_231x87.jpg?t=1745536404",
+      category: "Fighting",
+      description: "Experience one of the best games in the Fighting genre."
+    },
+    {
+      id: 80,
+      name: "The Elder Scrolls V: Skyrim Special Edition",
+      price: 10000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/capsule_231x87.jpg?t=1753715778",
+      category: "RPG",
+      description: "Experience one of the best games in the RPG genre."
+    },
+    {
+      id: 81,
+      name: "Mortal Kombat 1",
+      price: 10000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1971870/capsule_231x87.jpg?t=1750176505",
+      category: "Fighting",
+      description: "Experience one of the best games in the Fighting genre."
+    },
+    {
+      id: 82,
+      name: "Cyberpunk 2077",
+      price: 27000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/590e0988a2fb79f44d3e31e41fd4949eb76abc41/capsule_231x87.jpg?t=1769690377",
+      category: "RPG",
+      description: "Experience one of the best games in the RPG genre."
+    },
+    {
+      id: 83,
+      name: "The Witcher 3: Wild Hunt",
+      price: 8000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/abf6e7b3b01ed20c35a8dc0a009a8f9fc3e57b93/capsule_231x87.jpg?t=1768303991",
+      category: "RPG",
+      description: "Experience one of the best games in the RPG genre."
+    },
+    {
+      id: 84,
+      name: "Ninja Gaiden: Master Collection",
+      price: 40000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/subs/575623/capsule_231x87.jpg?t=1623364941",
+      category: "Action",
+      description: "Experience one of the best games in the Action genre."
+    },
+    {
+      id: 85,
+      name: "Resident Evil 4",
+      price: 16000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/capsule_231x87.jpg?t=1770093365",
+      category: "Horror",
+      description: "Experience one of the best games in the Horror genre."
+    },
+    {
+      id: 86,
+      name: "Sekiro: Shadows Die Twice",
+      price: 60000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_231x87.jpg?t=1762888662",
+      category: "Action",
+      description: "Experience one of the best games in the Action genre."
+    },
+    {
+      id: 87,
+      name: "Ratchet & Clank: Rift Apart",
+      price: 24000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1895880/capsule_231x87.jpg?t=1750956328",
+      category: "Adventure",
+      description: "Experience one of the best games in the Adventure genre."
+    },
+    {
+      id: 88,
+      name: "Yakuza: Like a Dragon",
+      price: 8000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1235140/capsule_231x87.jpg?t=1763642826",
+      category: "RPG",
+      description: "Experience one of the best games in the RPG genre."
+    },
+    {
+      id: 89,
+      name: "Forspoken",
+      price: 70000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1680880/capsule_231x87.jpg?t=1749705225",
+      category: "RPG",
+      description: "Experience one of the best games in the RPG genre."
+    },
+    {
+      id: 90,
+      name: "Devil May Cry 5",
+      price: 7000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/601150/capsule_231x87.jpg?t=1768869803",
+      category: "Action",
+      description: "Experience one of the best games in the Action genre."
+    },
+    {
+      id: 91,
+      name: "Lies of P",
+      price: 60000,
+      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627720/capsule_231x87.jpg?t=1764565054",
+      category: "RPG",
+      description: "Experience one of the best games in the RPG genre."
     }
   ],
   consoles: [
