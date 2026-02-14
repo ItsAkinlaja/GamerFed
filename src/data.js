@@ -840,7 +840,7 @@ export const products = {
       id: 207,
       name: "Dell G15 Gaming",
       price: 1200000,
-      image: "https://images.unsplash.com/photo-1588872657578-839618546390?q=80&w=1000&auto=format&fit=crop",
+      image: "/dell g15.webp",
       category: "Laptop",
       description: "Engineered for next-level gaming."
     },
