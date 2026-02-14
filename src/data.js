@@ -848,7 +848,7 @@ export const products = {
       id: 208,
       name: "Acer Predator Helios 16",
       price: 1900000,
-      image: "https://images.unsplash.com/photo-1544652478-6653e09f1826?q=80&w=1000&auto=format&fit=crop",
+      image: "/Acer Predator Helios 16.jpg",
       category: "Laptop",
       description: "Equipped with superior cooling technology and high performance."
     },
