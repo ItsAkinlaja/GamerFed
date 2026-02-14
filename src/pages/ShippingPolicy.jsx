@@ -1,10 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Truck, Clock, MapPin, AlertCircle } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
+import { Truck, Clock, MapPin, Globe } from 'lucide-react';
 
 const ShippingPolicy = () => {
   return (
     <div className="min-h-screen bg-[#050505] text-white pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+      <Helmet>
+        <title>Shipping Policy | Gamers Federation</title>
+        <meta name="description" content="Shipping and delivery information. We deliver gaming consoles and laptops nationwide in Nigeria." />
+      </Helmet>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

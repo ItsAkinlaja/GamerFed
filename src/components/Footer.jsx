@@ -28,10 +28,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-6 tracking-wide">Products</h3>
             <ul className="space-y-4 text-sm">
-              <li><Link to="/#games" className="hover:text-purple-400 transition-colors duration-300">Latest Games</Link></li>
-              <li><Link to="/#consoles" className="hover:text-purple-400 transition-colors duration-300">Consoles</Link></li>
-              <li><Link to="/#laptops" className="hover:text-purple-400 transition-colors duration-300">Gaming Laptops</Link></li>
-              <li><Link to="/#accessories" className="hover:text-purple-400 transition-colors duration-300">Accessories</Link></li>
+              <li><Link to="/games" className="hover:text-purple-400 transition-colors duration-300">Latest Games</Link></li>
+              <li><Link to="/consoles" className="hover:text-purple-400 transition-colors duration-300">Consoles</Link></li>
+              <li><Link to="/laptops" className="hover:text-purple-400 transition-colors duration-300">Gaming Laptops</Link></li>
+              <li><Link to="/accessories" className="hover:text-purple-400 transition-colors duration-300">Accessories</Link></li>
             </ul>
           </div>
 

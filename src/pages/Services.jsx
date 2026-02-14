@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { Wrench, Download, Cpu, Gamepad2, Monitor, Disc, CheckCircle, ArrowRight, Star, Clock, ShieldCheck } from 'lucide-react';
 import { contactInfo } from '../data';
 
@@ -10,65 +11,71 @@ const ServiceFeature = ({ text }) => (
   </div>
 );
 
-const DetailedServiceCard = ({ icon: Icon, title, description, features, delay }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.5, delay }}
-    className="group relative bg-[#0a0a0a] border border-white/10 rounded-2xl p-1 overflow-hidden hover:border-purple-500/30 transition-colors duration-500"
-  >
-    <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-    
-    <div className="relative h-full bg-[#0a0a0a]/80 backdrop-blur-sm p-6 rounded-xl flex flex-col">
-      <div className="flex items-start justify-between mb-6">
-        <div className="w-14 h-14 bg-gradient-to-br from-purple-500/10 to-blue-500/10 rounded-xl flex items-center justify-center border border-white/5 group-hover:border-purple-500/20 transition-colors">
-          <Icon className="w-7 h-7 text-gray-300 group-hover:text-white transition-colors" />
+const DetailedServiceCard = ({ icon, title, description, features, delay }) => {
+  const ServiceIcon = icon;
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay }}
+      className="group relative bg-[#0a0a0a] border border-white/10 rounded-2xl p-1 overflow-hidden hover:border-purple-500/30 transition-colors duration-500"
+    >
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      <div className="relative h-full bg-[#0a0a0a]/80 backdrop-blur-sm p-6 rounded-xl flex flex-col">
+        <div className="flex items-start justify-between mb-6">
+          <div className="w-14 h-14 bg-gradient-to-br from-purple-500/10 to-blue-500/10 rounded-xl flex items-center justify-center border border-white/5 group-hover:border-purple-500/20 transition-colors">
+            <ServiceIcon className="w-7 h-7 text-gray-300 group-hover:text-white transition-colors" />
+          </div>
+          <div className="bg-white/5 px-3 py-1 rounded-full text-xs font-medium text-gray-400 border border-white/5">
+            Premium
+          </div>
         </div>
-        <div className="bg-white/5 px-3 py-1 rounded-full text-xs font-medium text-gray-400 border border-white/5">
-          Premium
+
+        <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+          {title}
+        </h3>
+        <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
+          {description}
+        </p>
+
+        <div className="space-y-3 pt-6 border-t border-white/5">
+          {features.map((feature, idx) => (
+            <ServiceFeature key={idx} text={feature} />
+          ))}
+        </div>
+
+        <div className="mt-8 pt-4">
+          <a 
+            href={`https://wa.me/${contactInfo.whatsappNumber}?text=I'm interested in ${encodeURIComponent(title)} service`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-white/5 hover:bg-purple-600 text-white font-medium transition-all duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/20"
+          >
+            <span>Book Now</span>
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </div>
+    </motion.div>
+  );
+};
 
-      <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
-        {title}
-      </h3>
-      <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
-        {description}
-      </p>
-
-      <div className="space-y-3 pt-6 border-t border-white/5">
-        {features.map((feature, idx) => (
-          <ServiceFeature key={idx} text={feature} />
-        ))}
+const StatItem = ({ icon, value, label }) => {
+  const StatIcon = icon;
+  return (
+    <div className="flex items-center gap-4 bg-white/5 border border-white/10 p-4 rounded-xl">
+      <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center">
+        <StatIcon className="w-6 h-6 text-purple-400" />
       </div>
-
-      <div className="mt-8 pt-4">
-        <a 
-          href={`https://wa.me/${contactInfo.whatsappNumber}?text=I'm interested in ${encodeURIComponent(title)} service`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-white/5 hover:bg-purple-600 text-white font-medium transition-all duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/20"
-        >
-          <span>Book Now</span>
-          <ArrowRight className="w-4 h-4" />
-        </a>
+      <div>
+        <div className="text-2xl font-bold text-white">{value}</div>
+        <div className="text-xs text-gray-400 uppercase tracking-wider">{label}</div>
       </div>
     </div>
-  </motion.div>
-);
-
-const StatItem = ({ icon: Icon, value, label }) => (
-  <div className="flex items-center gap-4 bg-white/5 border border-white/10 p-4 rounded-xl">
-    <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center">
-      <Icon className="w-6 h-6 text-purple-400" />
-    </div>
-    <div>
-      <div className="text-2xl font-bold text-white">{value}</div>
-      <div className="text-xs text-gray-400 uppercase tracking-wider">{label}</div>
-    </div>
-  </div>
-);
+  );
+};
 
 const Services = () => {
   const services = [
@@ -112,6 +119,10 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-[#050505]">
+      <Helmet>
+        <title>Our Services | Gamers Federation</title>
+        <meta name="description" content="Expert console repairs, game installation, PC building, and controller fixes in Lagos, Nigeria." />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-10" />

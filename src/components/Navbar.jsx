@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ShoppingCart, Search } from 'lucide-react';
+import { Menu, X, ShoppingCart, Search, ShoppingBag } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useCart } from '../context/CartContext';
 import logo from '../assets/logo.png';
 import SearchModal from './SearchModal';
+import CartDrawer from './CartDrawer';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const { getCartCount, setIsCartOpen } = useCart();
   const location = useLocation();
 
   const isHome = location.pathname === '/';
@@ -75,6 +78,19 @@ const Navbar = () => {
             >
               <Search className="h-5 w-5" />
             </button>
+
+            <button
+              onClick={() => setIsCartOpen(true)}
+              className="relative text-gray-300 hover:text-white hover:bg-white/5 p-2 rounded-full transition-colors duration-300 group"
+            >
+              <ShoppingBag className="h-5 w-5 group-hover:text-purple-400 transition-colors" />
+              {getCartCount() > 0 && (
+                <span className="absolute top-0 right-0 bg-purple-600 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
+                  {getCartCount()}
+                </span>
+              )}
+            </button>
+            
             {isHome ? (
               <a 
                 href="#games"
@@ -116,6 +132,7 @@ const Navbar = () => {
       </div>
 
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+      <CartDrawer />
 
       <AnimatePresence>
         {isOpen && (

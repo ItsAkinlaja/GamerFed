@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Wrench, Download, Cpu, ArrowRight, Zap, Shield, Sparkles } from 'lucide-react';
+import { Wrench, Download, Cpu, ArrowRight, Sparkles } from 'lucide-react';
 
-const ServiceCard = ({ icon: Icon, title, description, delay, index }) => (
+const ServiceCard = ({ icon: Icon, title, description, delay }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}

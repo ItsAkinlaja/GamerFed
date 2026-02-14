@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Hero from '../components/Hero';
 import ProductCard from '../components/ProductCard';
 import Reviews from '../components/Reviews';
@@ -54,6 +55,10 @@ const Section = ({ title, id, items, className, viewMoreLink }) => (
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Gamers Federation | Your Ultimate Gaming Store</title>
+        <meta name="description" content="Premium gaming store in Nigeria. Shop latest PS5, Xbox, Gaming Laptops, and PC Games at best prices." />
+      </Helmet>
       <Hero />
       
       <main className="relative z-10">

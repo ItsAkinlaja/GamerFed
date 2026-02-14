@@ -73,7 +73,7 @@ const ProductCard = ({ product }) => {
           </div>
           
           <button 
-            onClick={handleBuyNow}
+            onClick={() => addToCart(product)}
             className="p-3 bg-white/5 hover:bg-purple-600 rounded-xl text-white transition-colors duration-300 group/btn"
           >
             <ShoppingBag size={20} className="group-hover/btn:scale-110 transition-transform" />

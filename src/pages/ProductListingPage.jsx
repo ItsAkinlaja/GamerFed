@@ -38,6 +38,10 @@ const ProductListingPage = ({ title, description, items, gradientFrom, gradientT
 
   return (
     <div className="min-h-screen pt-20 pb-12 relative overflow-hidden">
+      <Helmet>
+        <title>{title} | Gamers Federation</title>
+        <meta name="description" content={`Explore our collection of ${title}. ${description}`} />
+      </Helmet>
       {/* Background Elements */}
       <div className="fixed inset-0 pointer-events-none">
         <div className={`absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b ${gradientFrom} to-transparent opacity-20`} />

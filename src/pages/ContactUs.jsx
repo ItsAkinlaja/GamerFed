@@ -1,11 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { Phone, Mail, MapPin, MessageSquare } from 'lucide-react';
 import { contactInfo } from '../data';
 
 const ContactUs = () => {
   return (
     <div className="min-h-screen bg-[#050505] text-white pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+      <Helmet>
+        <title>Contact Us | Gamers Federation</title>
+        <meta name="description" content="Get in touch with Gamers Federation. Phone support, WhatsApp chat, and email for all your gaming inquiries." />
+      </Helmet>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
