@@ -4,7 +4,7 @@ export const products = {
       id: 1,
       name: "EA Sports FC 24",
       price: 45000,
-      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2195250/header.jpg",
+      image: "/FC 2026.jpg",
       category: "Console",
       description: "The world's game. Experience the most true-to-football experience ever."
     },
@@ -732,10 +732,10 @@ export const products = {
     },
     {
       id: 102,
-      name: "Xbox Series X",
-      price: 600000,
-      image: "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=800&auto=format&fit=crop",
-      category: "Console",
+    name: "Xbox Series X",
+    price: 600000,
+    image: "/xbox series 5.jpg",
+    category: "Console",
       description: "The fastest, most powerful Xbox ever."
     },
     {
