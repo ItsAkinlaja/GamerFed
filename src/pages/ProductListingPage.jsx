@@ -74,7 +74,15 @@ const ProductListingPage = ({ title, description, items, gradientFrom, gradientT
 
         {/* Product Grid */}
         {enableCategorization && groupedItems ? (
-          Object.entries(groupedItems).map(([category, categoryItems]) => (
+          Object.entries(groupedItems)
+            .sort(([catA], [catB]) => {
+              // Prioritize "Adventure" category
+              if (catA.includes('Adventure')) return -1;
+              if (catB.includes('Adventure')) return 1;
+              // Then sort alphabetically
+              return catA.localeCompare(catB);
+            })
+            .map(([category, categoryItems]) => (
             <div key={category} className="mb-20 relative">
                <div className="absolute -left-4 -top-8 w-24 h-24 bg-gradient-to-br from-white/5 to-white/0 rounded-full blur-2xl -z-10" />
               

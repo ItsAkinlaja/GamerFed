@@ -14,10 +14,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '/' },
+    { name: 'Games', href: '/games' },
+    { name: 'Consoles', href: '/consoles' },
+    { name: 'Laptops', href: '/laptops' },
     { name: 'Services', href: '/services' },
-    { name: 'Games', href: isHome ? '#games' : '/#games' },
-    { name: 'Consoles', href: isHome ? '#consoles' : '/#consoles' },
-    { name: 'Laptops', href: isHome ? '#laptops' : '/#laptops' },
   ];
 
   const handleNavClick = (href) => {
