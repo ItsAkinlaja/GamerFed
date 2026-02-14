@@ -12,6 +12,7 @@ import ProductListingPage from './pages/ProductListingPage';
 import { products } from './data';
 import ScrollToTop from './components/ScrollToTop';
 import BackToTopButton from './components/BackToTopButton';
+import DMButton from './components/DMButton';
 
 // Simple ScrollToTop component to ensure pages start at top
 const ScrollToTopWrapper = () => {
