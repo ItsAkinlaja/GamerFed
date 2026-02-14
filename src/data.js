@@ -732,10 +732,10 @@ export const products = {
     },
     {
       id: 102,
-    name: "Xbox Series X",
-    price: 600000,
-    image: "/xbox series 5.jpg",
-    category: "Console",
+      name: "Xbox Series X",
+      price: 600000,
+      image: "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=800&auto=format&fit=crop",
+      category: "Console",
       description: "The fastest, most powerful Xbox ever."
     },
     {
@@ -750,7 +750,7 @@ export const products = {
       id: 104,
       name: "Xbox Series S",
       price: 350000,
-      image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?q=80&w=1000&auto=format&fit=crop",
+      image: "/xbox series 5.jpg",
       category: "Console",
       description: "Next-gen performance in the smallest Xbox ever."
     },
@@ -758,7 +758,7 @@ export const products = {
       id: 105,
       name: "Steam Deck OLED",
       price: 750000,
-      image: "https://shared.akamai.steamstatic.com/store_item_assets/steamdeck/steamdeck_hero_1.png",
+      image: "/steam deck oled.webp",
       category: "Handheld",
       description: "The ultimate handheld gaming computer."
     },
