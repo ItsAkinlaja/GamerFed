@@ -774,7 +774,7 @@ export const products = {
       id: 108,
       name: "Meta Quest 3",
       price: 450000,
-      image: "https://images.unsplash.com/photo-1622979135225-d2ba269fb1bd?q=80&w=1000&auto=format&fit=crop",
+      image: "/Meta quest 3.webp",
       category: "VR",
       description: "The most powerful Meta Quest yet."
     },
