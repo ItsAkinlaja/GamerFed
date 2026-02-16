@@ -111,9 +111,9 @@ const Services = () => {
     },
     {
       icon: Cpu,
-      title: "Consultation",
-      description: "Not sure what to buy? Get professional advice on setups, upgrades, and future-proofing your gaming station.",
-      features: ["Budget Planning", "Compatibility Check", "Upgrade Path", "Peripherals Advice"]
+      title: "Online PC Consultation",
+      description: "Get remote help to fix any PC problem plus advice on upgrades and optimization.",
+      features: ["Online Troubleshooting", "Any PC Issue", "Consultation Fee: ₦5,000", "Upgrade & Buying Advice"]
     }
   ];
 

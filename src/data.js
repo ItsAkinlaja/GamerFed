@@ -171,7 +171,7 @@ export const products = {
     {
       id: 23,
       name: "Black Myth: Wukong",
-      price: 45000,
+      price: 30000,
       image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/b7f722ddd5e23503f598586aa3700dd4d827bb2d/capsule_231x87.jpg?t=1760601605",
       category: "Adventure",
       description: "Experience one of the best games in the Adventure genre."
@@ -719,16 +719,56 @@ export const products = {
       image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627720/capsule_231x87.jpg?t=1764565054",
       category: "RPG",
       description: "Experience one of the best games in the RPG genre."
+    },
+    {
+      id: 92,
+      name: "Complete Call of Duty PC Collection",
+      price: 100000,
+      image: "https://via.placeholder.com/300x450?text=CoD+PC+Collection",
+      category: "PC Bundle",
+      description: "All major Call of Duty titles installed on a 1TB HDD with USB 3.0 case. Choose your favourites from our collection."
+    },
+    {
+      id: 93,
+      name: "Complete Assassin's Creed PC Collection",
+      price: 100000,
+      image: "https://via.placeholder.com/300x450?text=AC+PC+Collection",
+      category: "PC Bundle",
+      description: "Complete Assassin's Creed saga on a 1TB HDD with USB 3.0 case. Select the titles you want from our library."
+    },
+    {
+      id: 94,
+      name: "PC Adventure & Open World Pack",
+      price: 100000,
+      image: "https://via.placeholder.com/300x450?text=Adventure+Open+World+Pack",
+      category: "PC Bundle",
+      description: "Curated adventure and open-world PC games on a 1TB HDD with USB 3.0 case. You can also customize the game list from our collection."
+    },
+    {
+      id: 95,
+      name: "PS4 Game Pack (Load Your Console)",
+      price: 35000,
+      image: "https://via.placeholder.com/300x450?text=PS4+Game+Pack",
+      category: "Console Service",
+      description: "Load your PS4 console with any games of choice from our game list."
+    },
+    {
+      id: 96,
+      name: "EA Sports FC 26 PC Key",
+      price: 30000,
+      image: "https://via.placeholder.com/300x450?text=FC+26+PC+Key",
+      category: "PC",
+      description: "Digital PC key for EA Sports FC 26."
     }
   ],
   consoles: [
     {
       id: 101,
-      name: "PlayStation 5 Standard Edition",
+      name: "PlayStation 5 Standard (UK Used, 1 Pad)",
       price: 650000,
       image: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=1000&auto=format&fit=crop",
       category: "Console",
-      description: "Experience lightning-fast loading with an ultra-high-speed SSD."
+      description: "UK used PS5 Standard with one wireless controller."
     },
     {
       id: 102,
@@ -745,6 +785,22 @@ export const products = {
       image: "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=800&auto=format&fit=crop",
       category: "Console",
       description: "7-inch OLED screen. Feast your eyes on vivid colors and crisp contrast."
+    },
+    {
+      id: 111,
+      name: "PlayStation 5 Slim (New, 1 Pad)",
+      price: 750000,
+      image: "/ps5 slim.jpg",
+      category: "Console",
+      description: "Brand new PS5 Slim console with one controller."
+    },
+    {
+      id: 112,
+      name: "PlayStation 5 Pro (New, 1 Pad)",
+      price: 1350000,
+      image: "/Ps5 pro.avif",
+      category: "Console",
+      description: "Next‑gen PS5 Pro with enhanced performance, includes one controller."
     },
     {
       id: 104,
@@ -793,6 +849,30 @@ export const products = {
       image: "https://images.unsplash.com/photo-1618519764620-7403abdbdfe9?q=80&w=1000&auto=format&fit=crop",
       category: "Handheld",
       description: "Dedicated to handheld play."
+    },
+    {
+      id: 113,
+      name: "PlayStation 4 + 2 Pads (Loaded with Games)",
+      price: 300000,
+      image: "/ps4 game.jpg",
+      category: "Console",
+      description: "PS4 console with two controllers, loaded with games from our list."
+    },
+    {
+      id: 114,
+      name: "PlayStation 4 Slim + 2 Pads (Loaded with Games)",
+      price: 350000,
+      image: "/ps4 slim.jpg",
+      category: "Console",
+      description: "PS4 Slim console with two controllers, loaded with games from our list."
+    },
+    {
+      id: 115,
+      name: "PlayStation 4 Pro + 2 Pads (Loaded with Games)",
+      price: 400000,
+      image: "/ps4 pro.jpg",
+      category: "Console",
+      description: "PS4 Pro console with two controllers, loaded with games from our list."
     }
   ],
   laptops: [

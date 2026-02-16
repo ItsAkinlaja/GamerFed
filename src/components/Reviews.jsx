@@ -13,15 +13,6 @@ const reviews = [
     color: "bg-purple-600"
   },
   {
-    id: 2,
-    name: "Amina Yusuf",
-    location: "Abuja",
-    content: "Got my gaming laptop here. Customer service is top-notch, they helped me choose the best specs for streaming. Everything runs smoothly.",
-    rating: 5,
-    initials: "AY",
-    color: "bg-blue-600"
-  },
-  {
     id: 3,
     name: "Tunde Bakare",
     location: "Ibadan",
@@ -38,6 +29,15 @@ const reviews = [
     rating: 5,
     initials: "FA",
     color: "bg-pink-600"
+  },
+  {
+    id: 5,
+    name: "Nifemi",
+    location: "Osogbo",
+    content: "The games you installed on my PC have been playing smoothly, especially FIFA 22 and GTA V. Customer service is top notch.",
+    rating: 5,
+    initials: "NI",
+    color: "bg-indigo-600"
   }
 ];
 
