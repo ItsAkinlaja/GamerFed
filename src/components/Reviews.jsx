@@ -1,8 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Star, Quote, CheckCircle } from 'lucide-react';
+import { Star, Quote, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const reviews = [
+  { 
+    id: 5,
+    name: "Nifemi",
+    location: "Osogbo",
+    content: "The games you installed on my PC have been playing smoothly, especially FIFA 22 and GTA V. Customer service is top notch. 08149142884",
+    rating: 5,
+    initials: "NI",
+    color: "bg-indigo-600"
+  },
+  { 
+    id: 6,
+    name: "Victor",
+    location: "Nigeria",
+    content: "Your services are great and reliable. No ish with the gadgets (monitor, consoles, pad) so far, and the price is moderate compared with other online vendors. +234 810 872 2175",
+    rating: 5,
+    initials: "BJ",
+    color: "bg-yellow-600"
+  },
   {
     id: 1,
     name: "Chinedu Okafor",
@@ -12,7 +30,16 @@ const reviews = [
     initials: "CO",
     color: "bg-purple-600"
   },
-  {
+  { 
+    id: 2,
+    name: "Amina Yusuf",
+    location: "Abuja",
+    content: "Got my gaming laptop here and it's been perfect for both work and play. Everything runs smoothly.",
+    rating: 5,
+    initials: "AY",
+    color: "bg-blue-600"
+  },
+  { 
     id: 3,
     name: "Tunde Bakare",
     location: "Ibadan",
@@ -29,15 +56,6 @@ const reviews = [
     rating: 5,
     initials: "FA",
     color: "bg-pink-600"
-  },
-  {
-    id: 5,
-    name: "Nifemi",
-    location: "Osogbo",
-    content: "The games you installed on my PC have been playing smoothly, especially FIFA 22 and GTA V. Customer service is top notch. 08149142884",
-    rating: 5,
-    initials: "NI",
-    color: "bg-indigo-600"
   }
 ];
 
@@ -83,6 +101,26 @@ const ReviewCard = ({ review, index }) => (
 );
 
 const Reviews = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const itemsPerSlide = 4;
+  const totalSlides = Math.ceil(reviews.length / itemsPerSlide);
+
+  const goToNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  };
+
+  const goToPrev = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % totalSlides);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [totalSlides]);
+
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 relative bg-[#050505] overflow-hidden">
       {/* Background Elements */}
@@ -106,10 +144,59 @@ const Reviews = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {reviews.map((review, index) => (
-            <ReviewCard key={review.id} review={review} index={index} />
-          ))}
+        <div className="relative max-w-6xl mx-auto">
+          <button
+            type="button"
+            onClick={goToPrev}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white shadow-lg backdrop-blur-sm hover:bg-white/10 transition-colors"
+            aria-label="Previous reviews"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+
+          <button
+            type="button"
+            onClick={goToNext}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white shadow-lg backdrop-blur-sm hover:bg-white/10 transition-colors"
+            aria-label="Next reviews"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
+
+          <div className="overflow-hidden">
+            <div
+              className="flex transition-transform duration-500"
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            >
+              {Array.from({ length: totalSlides }).map((_, slideIndex) => {
+                const start = slideIndex * itemsPerSlide;
+                const group = reviews.slice(start, start + itemsPerSlide);
+
+                return (
+                  <div key={slideIndex} className="w-full flex-shrink-0 px-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                      {group.map((review, index) => (
+                        <ReviewCard key={review.id} review={review} index={index} />
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center gap-2 mt-6">
+            {Array.from({ length: totalSlides }).map((_, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() => setCurrentSlide(index)}
+                className={`h-2 w-2 rounded-full transition-all ${
+                  index === currentSlide ? 'w-6 bg-purple-500' : 'bg-gray-600'
+                }`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
