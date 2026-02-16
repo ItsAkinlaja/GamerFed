@@ -34,7 +34,7 @@ const reviews = [
     id: 5,
     name: "Nifemi",
     location: "Osogbo",
-    content: "The games you installed on my PC have been playing smoothly, especially FIFA 22 and GTA V. Customer service is top notch.",
+    content: "The games you installed on my PC have been playing smoothly, especially FIFA 22 and GTA V. Customer service is top notch. 08149142884",
     rating: 5,
     initials: "NI",
     color: "bg-indigo-600"

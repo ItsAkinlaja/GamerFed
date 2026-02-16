@@ -12,7 +12,7 @@ export const products = {
       id: 93,
       name: "Complete Assassin's Creed PC Collection",
       price: 100000,
-      image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2356780/header.jpg",
+      image: "/Assasin Creed.jpeg",
       category: "PC Bundle",
       description: "Complete Assassin's Creed saga on a 1TB HDD with USB 3.0 case. Select the titles you want from our library."
     },
